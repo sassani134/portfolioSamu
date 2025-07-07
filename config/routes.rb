@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  get "cv", to: "static#cv"
+  get "link_tree", to: "static#link"
+
+
   resources :articles
   get "home/index"
   devise_for :admins
