@@ -4,4 +4,7 @@ class StaticController < ApplicationController
 
   def link
   end
+
+  def credit
+  end
 end
