@@ -12,7 +12,6 @@ RSpec.describe "articles/new", type: :view do
     render
 
     assert_select "form[action=?][method=?]", articles_path, "post" do
-
       assert_select "input[name=?]", "article[title]"
 
       assert_select "textarea[name=?]", "article[content]"

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get "cv", to: "static#cv", as: :cv
   get "link_tree", to: "static#link", as: :link_tree
   get "credit", to: "static#credit", as: :credit
