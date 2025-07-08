@@ -23,13 +23,15 @@
   </head>
 
   <body>
-    <% if notice %>
-      <%= notice %>
-    <% end %>
-    <% if alert %>
-      <%= alert %>
-    <% end %>
     <%= render "partials/navbar" %>
-    <%= yield %>
+    <main class="mt-16">
+      <% if notice %>
+        <%= notice %>
+      <% end %>
+      <% if alert %>
+        <%= alert %>
+      <% end %>
+      <%= yield %>
+    </main>
   </body>
 </html>
